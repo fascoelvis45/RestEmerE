@@ -12,14 +12,14 @@
 
     <div class="box-body">
 
-        <button class="btn btn-success btn-lg" onclick="cargarURL('pedido/addPedidoListaMesas.jsp?id_usuario=<%=id_usuario%>', 'content')">
+<!--        <button class="btn btn-success btn-lg" onclick="cargarURL('pedido/addPedidoListaMesas.jsp?id_usuario=<%=id_usuario%>', 'content')">
             <b>    <i class="fa fa-plus"></i> PEDIDO</b>
 
-        </button>
+        </button>-->
 
     </div>
 
-</div>
+<!--</div>-->
 
 
 
@@ -140,19 +140,15 @@
                                 </table>
                             </td>
                             <td> 
-                                <button class="btn btn-sm"  onclick="cargarURL('ticket/formTicket.jsp?id_pedido=<%=rs.getObject("id")%>', 'content')">
-                                    <b> 
-                                        <!--<i class="fa fa-plus"></i>-->
-                                        TICKET CONSUMO</b>
-                                </button>
+                                 
                                     
-                                <button class="btn btn-info btn-sm" onclick="cargarURL('pedido/reporteMesasDisponibles.jsp?id_pedido=<%=rs.getObject("id")%>&id_usuario=<%=id_usuario%>', 'content')">
+                                <button class="btn btn-info btn-sm" onclick="cargarURL('boleta/formBoleta.jsp?id_pedido=<%=rs.getObject("id")%>', 'content')">
                                     <b>    
                                         <!--<i class="fa fa-plus" ></i>-->
                                         BOLETA VENTA</b>
                                 </button>
 
-                                <button class="btn btn-success btn-sm" onclick="cargarURL('pedido/reporteMesasDisponibles.jsp?id_pedido=<%=rs.getObject("id")%>&id_usuario=<%=id_usuario%>', 'content')">
+                                <button class="btn btn-success btn-sm" onclick="cargarURL('factura/formFactura.jsp?id_pedido=<%=rs.getObject("id")%>', 'content')">
                                     <b> 
                                         <!--<i class="fa fa-plus" ></i>--> 
                                         FACTURA</b>
